@@ -14,10 +14,10 @@ import { KnobModule } from 'primeng/knob';
 })
 export class App {
   protected readonly title = signal('prime-test');
-  volume: number = 30; // Initial volume level
+  volume: number = 50; // Initial volume level
   muted: boolean = false;
   toggleMute() {
     this.muted = !this.muted;
-    this.volume = this.muted ? 0 : 30;
+    this.volume = this.muted ? 0 : 50;
   }
 }
